@@ -35,6 +35,14 @@ flutter test
 
 Generated files (`*.g.dart`, `lib/l10n/generated/`) are not committed. Run `build_runner` and `gen-l10n` after a fresh clone.
 
+## Localization
+
+User-facing strings are in `lib/l10n/app_en.arb` (template) and `lib/l10n/app_ru.arb`. To add a language, add `app_<code>.arb` with all keys from the template and run `flutter gen-l10n`. The app falls back to English for unsupported device languages.
+
+In plural messages, `=1` is treated as the `one` category by gen-l10n. Languages where `one` also covers other numbers (Russian: 21, 31) need a separate string for the singular case, as done for the billing period labels.
+
+The Android widget strings are in `android/app/src/main/res/values*/strings.xml`. The iOS widget receives its empty-state text from the app. Its gallery name and description are English only.
+
 ## Database
 
 The database is a Drift database defined in `lib/core/database/app_database.dart`. The current schema version is 1. Schema snapshots are stored in `drift_schemas/`.
