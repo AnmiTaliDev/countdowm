@@ -23,6 +23,7 @@ dependencies:
   home_widget: ^0.10.0
   intl: ^0.20.3
   material_ui: ^1.6.0
+  package_info_plus: ^10.2.2
   timezone: ^0.11.1
 
 dev_dependencies:
@@ -36,3 +37,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+  assets:
+    - LICENSE
+    - assets/icon/icon.png
+    - assets/licenses/MaterialIcons_LICENSE.txt
