@@ -115,6 +115,16 @@
   "statsEmpty": "Add subscriptions to see statistics.",
   "settingsReminder": "Default reminder",
   "settingsData": "Data",
+  "aboutTitle": "About Countdown",
+  "aboutVersion": "{version} ({build})",
+  "@aboutVersion": {
+    "placeholders": {
+      "version": {"type": "String"},
+      "build": {"type": "String"}
+    }
+  },
+  "aboutLegalese": "Licensed under GPL-3.0-or-later. There is no warranty.",
+  "aboutDescription": "Tracks subscriptions and the time left until each charge. Works offline and stores all data on the device.",
   "exportJson": "Export as JSON",
   "exportCsv": "Export as CSV",
   "importFile": "Import from file",
