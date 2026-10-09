@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 
-import 'dart:ui';
-
 import '../../../core/format/money_format.dart';
 import '../../../core/platform/local_notifications.dart';
-import '../../../l10n/generated/app_localizations.dart';
+import '../../../l10n/system_localizations.dart';
 import '../../subscriptions/domain/subscription.dart';
 import '../domain/reminder_plan.dart';
 
@@ -18,11 +16,7 @@ class ReminderScheduler {
     int defaultDays,
     DateTime now,
   ) {
-    final locale = PlatformDispatcher.instance.locale;
-    final supported = AppLocalizations.delegate.isSupported(locale);
-    final strings = lookupAppLocalizations(
-      supported ? locale : const Locale('en'),
-    );
+    final strings = systemLocalizations();
     final reminders = planReminders(subscriptions, defaultDays, now);
     return _notifications.replaceAll(
       [
