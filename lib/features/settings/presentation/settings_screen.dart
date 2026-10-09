@@ -6,6 +6,7 @@ import 'package:material_ui/material_ui.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../backup/presentation/backup_actions.dart';
 import '../../notifications/domain/reminder_plan.dart';
+import 'about_tile.dart';
 import 'settings_providers.dart';
 
 class SettingsScreen extends ConsumerWidget {
@@ -50,6 +51,8 @@ class SettingsScreen extends ConsumerWidget {
             child: Text(l10n.settingsData, style: theme.textTheme.titleMedium),
           ),
           const BackupActions(),
+          const Divider(),
+          const AboutTile(),
         ],
       ),
     );
