@@ -1,6 +1,6 @@
 # Countdown
 
-Countdown is an offline subscription tracker for Android and iOS. It is for people who want to see when each subscription is charged and what it costs.
+Countdown is an offline subscription tracker.
 
 ## Dependencies
 
