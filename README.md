@@ -69,6 +69,16 @@ The widget shows the nearest upcoming charge.
 
 The identifier `dev.anmitali.countdown` is used in the Android `applicationId`, the iOS bundle identifiers and the App Group. When the identifier is changed, update `android/app/build.gradle.kts`, `ios/Runner.xcodeproj`, both `.entitlements` files and `widgetAppGroupId` in `lib/core/platform/home_widget_bridge.dart`.
 
+## App icon
+
+The icon sources are in `assets/icon/`: `icon.svg` (full icon), `icon_foreground.svg` (adaptive foreground) and `icon_monochrome.svg` (themed icon). The PNG files are rendered from the SVG files at 1024x1024. To regenerate the platform icons after a change:
+
+```
+dart run flutter_launcher_icons
+```
+
+The configuration is in `flutter_launcher_icons.yaml`. The tool also rewrites two build settings in `ios/Runner.xcodeproj/project.pbxproj`. Revert `ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS` to `YES` in both places.
+
 ## Material 3 Expressive
 
 The app uses the components in `material_ui`. At version 1.6.0 the package supports Expressive only for `IconButton`, through `StyleVariant.material3Expressive`. Other Expressive components are not available in the package and are not used.
