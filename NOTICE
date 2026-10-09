@@ -1,0 +1,113 @@
+Countdown
+Copyright (C) 2026 The Countdown authors
+
+Countdown is free software licensed under the GNU General Public License,
+version 3 or later (GPL-3.0-or-later). The full text is in the LICENSE file.
+There is no warranty.
+
+Countdown includes third-party software. The components are listed below with
+their licenses. The full license texts of all components, including indirect
+dependencies, are shown in the application under Settings, About Countdown,
+View licenses. They are also contained in the source package of each
+component.
+
+
+Runtime and framework
+
+Flutter framework and engine
+  Copyright 2014 The Flutter Authors
+  License: BSD-3-Clause
+  The engine contains third-party components under their own licenses. Their
+  texts are in the LICENSE files of the Flutter SDK artifacts.
+
+Dart runtime and Dart SDK libraries
+  Copyright The Dart project authors
+  License: BSD-3-Clause
+
+Material Icons font
+  License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+  The license text is the one shipped with the Flutter SDK
+  (MaterialIcons_LICENSE.txt). It is also in assets/licenses/.
+
+SQLite
+  License: public domain
+  Provided through the sqlite3 package.
+
+
+Dart and Flutter packages
+
+material_ui 1.6.0
+  Copyright 2013 The Flutter Authors
+  License: BSD-3-Clause
+
+go_router 18.0.2
+  Copyright 2013 The Flutter Authors
+  License: BSD-3-Clause
+
+intl 0.20.3
+  Copyright 2013, the Dart project authors
+  License: BSD-3-Clause
+
+flutter_local_notifications 22.3.1
+  Copyright 2018 Michael Bui
+  License: BSD-3-Clause
+
+home_widget 0.10.0
+  Copyright (c) 2020, Anton Borries
+  License: BSD-3-Clause
+
+package_info_plus 10.2.2
+  Copyright 2017 The Chromium Authors
+  License: BSD-3-Clause
+
+timezone 0.11.1
+  Copyright (c) 2014, timezone project authors
+  License: BSD-2-Clause
+
+dynamic_color 2.1.0
+  License: Apache-2.0
+
+flutter_timezone 5.1.1
+  License: Apache-2.0
+
+flutter_riverpod 3.4.3
+  Copyright (c) 2020 Remi Rousselet
+  License: MIT
+
+drift 2.35.2 and drift_flutter 0.3.1
+  Copyright (c) 2021 Simon Binder (drift), Copyright (c) 2024 Simon Binder (drift_flutter)
+  License: MIT
+
+file_picker 13.1.0
+  Copyright (c) 2018 Miguel Ruivo
+  License: MIT
+
+csv 8.0.0
+  Copyright (c) 2014 Christian Loitsch
+  License: MIT
+
+Indirect Dart dependencies are BSD, MIT and Apache-2.0 licensed, with one
+exception: dbus is licensed under MPL-2.0 and is used only on Linux, which
+Countdown does not target.
+
+
+Android libraries
+
+AndroidX (core, media, work, glance), Kotlin standard library, kotlinx.coroutines,
+Gson, Material Components for Android
+  License: Apache-2.0
+
+desugar_jdk_libs
+  License: GPL-2.0 with the Classpath Exception
+
+
+Development tools
+
+build_runner, drift_dev, flutter_launcher_icons and flutter_lints are used
+during development only and are not distributed with the application.
+
+
+Application icon
+
+The application icon was supplied by the project and is covered by the
+Countdown license.
