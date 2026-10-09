@@ -56,25 +56,29 @@
   "unitWeek": "Weeks",
   "unitMonth": "Months",
   "unitYear": "Years",
-  "everyDays": "{count, plural, =1{Every day} other{Every {count} days}}",
+  "everyDay": "Every day",
+  "everyDays": "{count, plural, one{Every {count} day} other{Every {count} days}}",
   "@everyDays": {
     "placeholders": {
       "count": {"type": "int"}
     }
   },
-  "everyWeeks": "{count, plural, =1{Every week} other{Every {count} weeks}}",
+  "everyWeek": "Every week",
+  "everyWeeks": "{count, plural, one{Every {count} week} other{Every {count} weeks}}",
   "@everyWeeks": {
     "placeholders": {
       "count": {"type": "int"}
     }
   },
-  "everyMonths": "{count, plural, =1{Every month} other{Every {count} months}}",
+  "everyMonth": "Every month",
+  "everyMonths": "{count, plural, one{Every {count} month} other{Every {count} months}}",
   "@everyMonths": {
     "placeholders": {
       "count": {"type": "int"}
     }
   },
-  "everyYears": "{count, plural, =1{Every year} other{Every {count} years}}",
+  "everyYear": "Every year",
+  "everyYears": "{count, plural, one{Every {count} year} other{Every {count} years}}",
   "@everyYears": {
     "placeholders": {
       "count": {"type": "int"}

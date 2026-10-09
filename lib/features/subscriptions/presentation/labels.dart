@@ -20,11 +20,12 @@ String categoryLabel(AppLocalizations l10n, SubscriptionCategory category) {
 }
 
 String periodLabel(AppLocalizations l10n, BillingPeriod period) {
+  final count = period.count;
   return switch (period.unit) {
-    PeriodUnit.day => l10n.everyDays(period.count),
-    PeriodUnit.week => l10n.everyWeeks(period.count),
-    PeriodUnit.month => l10n.everyMonths(period.count),
-    PeriodUnit.year => l10n.everyYears(period.count),
+    PeriodUnit.day => count == 1 ? l10n.everyDay : l10n.everyDays(count),
+    PeriodUnit.week => count == 1 ? l10n.everyWeek : l10n.everyWeeks(count),
+    PeriodUnit.month => count == 1 ? l10n.everyMonth : l10n.everyMonths(count),
+    PeriodUnit.year => count == 1 ? l10n.everyYear : l10n.everyYears(count),
   };
 }
 
