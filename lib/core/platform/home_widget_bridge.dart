@@ -13,6 +13,7 @@ class HomeWidgetBridge {
     required String? name,
     required String? cost,
     required int? chargeMillis,
+    required String emptyText,
   }) async {
     if (!_groupConfigured) {
       await HomeWidget.setAppGroupId(widgetAppGroupId);
@@ -24,6 +25,7 @@ class HomeWidgetBridge {
       'next_charge_millis',
       chargeMillis?.toString(),
     );
+    await HomeWidget.saveWidgetData<String>('empty_text', emptyText);
     await HomeWidget.updateWidget(
       androidName: androidWidgetProvider,
       iOSName: iosWidgetKind,

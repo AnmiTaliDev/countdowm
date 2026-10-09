@@ -8,6 +8,7 @@ struct CountdownEntry: TimelineEntry {
     let name: String?
     let cost: String?
     let chargeDate: Date?
+    let emptyText: String
 }
 
 struct CountdownProvider: TimelineProvider {
@@ -16,7 +17,8 @@ struct CountdownProvider: TimelineProvider {
             date: Date(),
             name: "Subscription",
             cost: "0.00",
-            chargeDate: Date().addingTimeInterval(86400)
+            chargeDate: Date().addingTimeInterval(86400),
+            emptyText: "No subscriptions"
         )
     }
 
@@ -38,7 +40,8 @@ struct CountdownProvider: TimelineProvider {
             date: Date(),
             name: defaults?.string(forKey: "next_name"),
             cost: defaults?.string(forKey: "next_cost"),
-            chargeDate: chargeDate
+            chargeDate: chargeDate,
+            emptyText: defaults?.string(forKey: "empty_text") ?? "No subscriptions"
         )
     }
 }
@@ -60,7 +63,7 @@ struct CountdownWidgetView: View {
                 Text(cost)
                     .font(.subheadline)
             } else {
-                Text("No subscriptions")
+                Text(entry.emptyText)
                     .font(.headline)
             }
         }

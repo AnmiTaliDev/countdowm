@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_description">Ближайшее списание по подпискам</string>
+    <string name="widget_empty">Подписок нет</string>
+    <string name="widget_today">Сегодня</string>
+    <string name="widget_remaining">%1$d д %2$d ч</string>
+</resources>
