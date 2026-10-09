@@ -22,7 +22,7 @@ class TestApp {
   final ProviderContainer container;
 }
 
-Future<TestApp> pumpTestApp(WidgetTester tester) async {
+Future<TestApp> pumpTestApp(WidgetTester tester, {Locale? locale}) async {
   tester.view.physicalSize = const Size(800, 2400);
   tester.view.devicePixelRatio = 1;
   addTearDown(tester.view.reset);
@@ -45,6 +45,7 @@ Future<TestApp> pumpTestApp(WidgetTester tester) async {
       child: Consumer(
         builder: (context, ref, child) {
           return MaterialApp.router(
+            locale: locale,
             routerConfig: ref.watch(routerProvider),
             localizationsDelegates: [
               AppLocalizations.delegate,
