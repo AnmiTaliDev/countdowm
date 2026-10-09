@@ -79,18 +79,25 @@ dart run flutter_launcher_icons
 
 The configuration is in `flutter_launcher_icons.yaml`. The tool also rewrites two build settings in `ios/Runner.xcodeproj/project.pbxproj`. Revert `ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS` to `YES` in both places.
 
+## Licenses
+
+Countdown is licensed under GPL-3.0-or-later. Third-party components and their licenses are listed in [NOTICE](NOTICE). The application shows the full license texts of all dependencies under Settings, About Countdown, View licenses. The GPL text and the Material Icons font license are registered there from assets (`LICENSE`, `assets/licenses/`).
+
+NOTICE is maintained by hand. Update it when a dependency is added, removed or replaced.
+
 ## Material 3 Expressive
 
 The app uses the components in `material_ui`. At version 1.6.0 the package supports Expressive only for `IconButton`, through `StyleVariant.material3Expressive`. Other Expressive components are not available in the package and are not used.
 
 ## Acknowledgments
 
-Countdown is built with Flutter, Riverpod, Drift, go_router, flutter_local_notifications, home_widget, dynamic_color, file_picker, csv, intl and timezone. Thanks to their authors and maintainers.
+Countdown is built with Flutter, Riverpod, Drift, go_router, flutter_local_notifications, home_widget, dynamic_color, file_picker, csv, intl, timezone and package_info_plus. Thanks to their authors and maintainers.
 
 ## Links
 
 - [Contributing](CONTRIBUTING.md)
 - [Data formats](docs/data-formats.md)
+- [Third-party notices](NOTICE)
 
 ## License
 
