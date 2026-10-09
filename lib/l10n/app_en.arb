@@ -1,0 +1,137 @@
+{
+  "@@locale": "en",
+  "appTitle": "Countdown",
+  "navSubscriptions": "Subscriptions",
+  "navStatistics": "Statistics",
+  "navSettings": "Settings",
+  "addSubscription": "Add subscription",
+  "editSubscription": "Edit subscription",
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "deleteTitle": "Delete subscription",
+  "deleteBody": "Delete {name}? This cannot be undone.",
+  "@deleteBody": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "next7Days": "Next 7 days",
+  "nothingIn7Days": "No charges in the next 7 days",
+  "emptyTitle": "No subscriptions",
+  "emptyBody": "Add a subscription to see the time left until its next charge.",
+  "sortLabel": "Sort by",
+  "sortDate": "Date",
+  "sortPrice": "Price",
+  "sortCategory": "Category",
+  "countdownToday": "Today",
+  "countdownDaysHours": "{days}d {hours}h",
+  "@countdownDaysHours": {
+    "placeholders": {
+      "days": {"type": "int"},
+      "hours": {"type": "int"}
+    }
+  },
+  "fieldName": "Name",
+  "fieldCost": "Cost",
+  "fieldCurrency": "Currency",
+  "fieldPeriod": "Billing period",
+  "fieldInterval": "Every",
+  "fieldIntervalUnit": "Unit",
+  "fieldNextCharge": "Next charge",
+  "fieldCategory": "Category",
+  "fieldNote": "Note",
+  "fieldUrl": "Service URL",
+  "fieldColor": "Color",
+  "errorRequired": "Required",
+  "errorNumber": "Enter a number greater than 0",
+  "errorCurrency": "Enter a 3-letter currency code",
+  "errorUrl": "Enter a URL starting with http:// or https://",
+  "errorInterval": "Enter a whole number of 1 or more",
+  "periodWeek": "Week",
+  "periodMonth": "Month",
+  "periodYear": "Year",
+  "periodCustom": "Custom",
+  "unitDay": "Days",
+  "unitWeek": "Weeks",
+  "unitMonth": "Months",
+  "unitYear": "Years",
+  "everyDays": "{count, plural, =1{Every day} other{Every {count} days}}",
+  "@everyDays": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "everyWeeks": "{count, plural, =1{Every week} other{Every {count} weeks}}",
+  "@everyWeeks": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "everyMonths": "{count, plural, =1{Every month} other{Every {count} months}}",
+  "@everyMonths": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "everyYears": "{count, plural, =1{Every year} other{Every {count} years}}",
+  "@everyYears": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "categoryStreaming": "Streaming",
+  "categoryMusic": "Music",
+  "categorySoftware": "Software",
+  "categoryCloud": "Cloud storage",
+  "categoryGaming": "Gaming",
+  "categoryNews": "News",
+  "categoryUtilities": "Utilities",
+  "categoryHealth": "Health",
+  "categoryOther": "Other",
+  "reminderUseDefault": "Use default reminder",
+  "reminderLabel": "Reminder",
+  "reminderDaysBefore": "{count, plural, =0{On the day of the charge} =1{1 day before} other{{count} days before}}",
+  "@reminderDaysBefore": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "notificationChannelName": "Charge reminders",
+  "notificationChannelDescription": "Reminders before subscription charges",
+  "notificationTitle": "Upcoming charge",
+  "notificationBody": "{days, plural, =0{{name} is charged today: {cost}} =1{{name} is charged tomorrow: {cost}} other{{name} is charged in {days} days: {cost}}}",
+  "@notificationBody": {
+    "placeholders": {
+      "name": {"type": "String"},
+      "cost": {"type": "String"},
+      "days": {"type": "int"}
+    }
+  },
+  "statsByCategory": "Spending by category",
+  "statsByCategoryNote": "Monthly cost, weekly and yearly periods converted to months",
+  "statsByMonth": "Spending by month",
+  "statsByMonthNote": "Charges due in the current and next 5 months",
+  "statsEmpty": "Add subscriptions to see statistics.",
+  "settingsReminder": "Default reminder",
+  "settingsData": "Data",
+  "exportJson": "Export as JSON",
+  "exportCsv": "Export as CSV",
+  "importFile": "Import from file",
+  "exportDone": "File saved",
+  "importConfirmTitle": "Replace subscriptions",
+  "importConfirmBody": "This replaces all current subscriptions with the {count} in the file.",
+  "@importConfirmBody": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "importConfirm": "Replace",
+  "importDone": "{count, plural, =1{Imported 1 subscription} other{Imported {count} subscriptions}}",
+  "@importDone": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "importFailed": "The file could not be read"
+}
