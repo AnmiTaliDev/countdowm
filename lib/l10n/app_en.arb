@@ -118,6 +118,8 @@
   "statsByMonthNote": "Charges due in the current and next 5 months",
   "statsEmpty": "Add subscriptions to see statistics.",
   "settingsReminder": "Default reminder",
+  "unsupportedPlatformTitle": "Platform not supported",
+  "unsupportedPlatformMessage": "Countdown does not run on Windows. Use Linux or another free software operating system, or run it through WSL.",
   "settingsData": "Data",
   "aboutTitle": "About Countdown",
   "aboutVersion": "{version} ({build})",
