@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../core/platform/home_widget_bridge.dart';
 import '../core/platform/local_notifications.dart';
+import '../core/platform/platform_support.dart';
 import '../features/home_widget/data/widget_updater.dart';
 import '../features/notifications/data/reminder_scheduler.dart';
 import '../features/settings/presentation/settings_providers.dart';
@@ -24,6 +25,10 @@ final externalSyncProvider = Provider<void>((ref) {
     return;
   }
   final now = DateTime.now();
-  ref.read(reminderSchedulerProvider).sync(subscriptions, reminderDays, now);
-  ref.read(widgetUpdaterProvider).sync(subscriptions, now);
+  if (supportsScheduledReminders) {
+    ref.read(reminderSchedulerProvider).sync(subscriptions, reminderDays, now);
+  }
+  if (supportsHomeWidget) {
+    ref.read(widgetUpdaterProvider).sync(subscriptions, now);
+  }
 });
