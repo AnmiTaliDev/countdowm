@@ -10,7 +10,7 @@ void main() {
   ) async {
     await tester.pumpWidget(const UnsupportedPlatformApp());
     await tester.pumpAndSettle();
-    expect(find.text('Platform not supported'), findsOneWidget);
+    expect(find.text('Legacy platform is not supported'), findsOneWidget);
     expect(find.textContaining('WSL'), findsOneWidget);
   });
 
@@ -21,7 +21,7 @@ void main() {
     addTearDown(tester.platformDispatcher.clearLocalesTestValue);
     await tester.pumpWidget(const UnsupportedPlatformApp());
     await tester.pumpAndSettle();
-    expect(find.text('Платформа не поддерживается'), findsOneWidget);
+    expect(find.text('Устаревшая платформа не поддерживается'), findsOneWidget);
     expect(find.textContaining('WSL'), findsOneWidget);
   });
 }
