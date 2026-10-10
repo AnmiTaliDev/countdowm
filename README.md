@@ -7,6 +7,8 @@ Countdown is an offline subscription tracker.
 - Flutter 3.47.7 stable (Dart 3.13)
 - JDK 17 and the Android SDK, for Android builds
 - Xcode with iOS 15 or later, for iOS builds
+- clang, cmake, ninja, pkg-config and the GTK 3 development files, for Linux builds
+- `xdg-desktop-portal` with a backend for your desktop, for the file dialogs on Linux
 
 Packages are listed in `pubspec.yaml`. The UI uses the official `material_ui` package.
 
@@ -24,6 +26,7 @@ Release builds:
 ```
 flutter build apk
 flutter build ios
+flutter build linux
 ```
 
 Checks:
@@ -42,6 +45,16 @@ User-facing strings are in `lib/l10n/app_en.arb` (template) and `lib/l10n/app_ru
 In plural messages, `=1` is treated as the `one` category by gen-l10n. Languages where `one` also covers other numbers (Russian: 21, 31) need a separate string for the singular case, as done for the billing period labels.
 
 The Android widget strings are in `android/app/src/main/res/values*/strings.xml`. The iOS widget receives its empty-state text from the app. Its gallery name and description are English only.
+
+## Platforms
+
+Android and iOS are the primary targets. Linux is supported with these limits:
+
+- Reminders are not scheduled. `flutter_local_notifications` does not implement scheduled notifications on Linux.
+- There is no home screen widget.
+- The database is stored in the XDG data directory (`$XDG_DATA_HOME`, usually `~/.local/share`), in a folder named after the application id.
+
+Windows is not supported. The project has no Windows runner. If one is added with `flutter create --platforms=windows .`, the app builds, shows a notice that the platform is not supported, and does nothing else. macOS is not a target and has no runner.
 
 ## Database
 

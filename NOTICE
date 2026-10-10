@@ -87,8 +87,7 @@ csv 8.0.0
   License: MIT
 
 Indirect Dart dependencies are BSD, MIT and Apache-2.0 licensed, with one
-exception: dbus is licensed under MPL-2.0 and is used only on Linux, which
-Countdown does not target.
+exception: dbus is licensed under MPL-2.0. It is used by the Linux build only.
 
 
 Android libraries
